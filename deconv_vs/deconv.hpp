@@ -1,5 +1,5 @@
 #pragma once
-#include "common.h"
+#include "common.hpp"
 #include <opencv2\opencv.hpp>
 #include <opencv2\highgui.hpp>
 #include <opencv2\imgcodecs.hpp>
@@ -181,6 +181,22 @@ void RichardLucy(cv::InputArray _srcI,
  */
 
 double MSEest(cv::InputArray _srcIA, cv::InputArray _srcIB);
+
+/**************************************************************************************************
+ * Fn:	void norm_show(cv::InputArray _srcI, const char *windowName);
+ *
+ * Normalise show.utility function.
+ *
+ * Author:	Lccur
+ *
+ * Date:	2017/8/9
+ *
+ * Parameters:
+ * _srcI - 			Source i.
+ * windowName - 	Name of the window.
+ */
+
+void norm_show(cv::InputArray _srcI, const char *windowName);
 /**************************************************************************************************
 // End of deconv.h
  **************************************************************************************************/

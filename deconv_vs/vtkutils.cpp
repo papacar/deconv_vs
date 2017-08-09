@@ -1,4 +1,4 @@
-#include "vtkutils.h"
+#include "vtkutils.hpp"
 
 int plot1D(std::vector<double> _data, const char* dataName)
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include "common.h"
+#include "common.hpp"
 #include <tiffio.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>

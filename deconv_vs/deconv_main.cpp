@@ -1,9 +1,9 @@
-#include "common.h"
-#include "psf_boost.h"
-#include "deconv.h"
-#include "cvutils.h"
-#include "vtkutils.h"
-#include "config.h"
+#include "common.hpp"
+#include "psf_boost.hpp"
+#include "deconv.hpp"
+#include "cvutils.hpp"
+#include "vtkutils.hpp"
+#include "config.hpp"
 
 #define M_2PI (6.283185307179586476925286766559)
 int AiryRadius;
@@ -25,7 +25,8 @@ int main()
 	image = cv::imread("imgs/gakki.png", 0);
 
 	multiply_fourier(image, PSF, out_img);
-	RichardLucy(out_img, PSF, de_img, mse_stat,20);
+	RichardLucy(out_img, PSF, de_img, mse_stat, 20);
+	//divide_fourier(out_img, PSF, de_img);
 
 	cv::imshow("GAKKI", image);
 	cv::imshow("CONV", out_img);
@@ -33,7 +34,7 @@ int main()
 	cv::imshow("PSF", PSF);
 	cv::waitKey(-1);
 
-	plot1D(mse_stat, "MSE statistic");
+	//plot1D(mse_stat, "MSE statistic");
 
 	return 0;
 }
