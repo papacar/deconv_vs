@@ -1,4 +1,4 @@
-#include "cvutils.h"
+#include "cvutils.hpp"
 
 void vec2mat(std::vector<std::vector<double> > M2D, const cv::OutputArray out_im) {
 	double *ptr;

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "common.h"
+#include "common.hpp"
 #include <boost/lambda/lambda.hpp>
 #include <boost/multiprecision/cpp_dec_float.hpp>
 #include <boost/math/special_functions/bessel.hpp>

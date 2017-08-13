@@ -1,5 +1,5 @@
 #pragma once
-#include "psf_boost.h"
+#include "psf_boost.hpp"
 #include <complex>
 
 #include <boost/lambda/lambda.hpp>
